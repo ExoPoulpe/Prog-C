@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1517514763 source:f:\exercice c\testvigenere\main.c
+	<stdio.h>
+	<string.h>
+

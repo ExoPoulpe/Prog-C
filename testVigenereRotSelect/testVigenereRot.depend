@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1517592745 source:f:\exercice c\testvigenererot\main.c
+	<stdio.h>
+	<string.h>
+
+1518447313 source:f:\exercice c\testvigenererotselect\main.c
+	<stdio.h>
+	<string.h>
+
