@@ -7,7 +7,7 @@
 *Description:   Encode and Decode by Vigenere methods with password and encode by cezar with select value
 *Use: For use that you must just type c/C or cr/CR or cra/CRA for encode your word value with your password
 *Show help for more Informations
-*
+* RSA encode on DEV
 */
 
 #include <stdio.h>
