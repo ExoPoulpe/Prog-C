@@ -1,7 +1,7 @@
 /*
 *
 *Author:    Troller Fabian
-*Grade:     Tecnician ES in ComputerScientist
+*Grade:     Tecnician ES in Computer Scientist
 *Version:   1.5.2.0
 *Date:      01.28.2018
 *Description:   Encode and Decode by Vigenere methods with password and encode by cezar with select value
@@ -56,7 +56,7 @@ signed int carOverFlowList(signed int Value) // methods for secure value in alap
     return Value;
 }
 
-char hashAdler32(char mot[])
+char hashAdler32(char mot[],char Hash[])
 {
     unsigned int a=1,b=0,i=0;
     char resultA[16],resultB[16];
@@ -64,6 +64,7 @@ char hashAdler32(char mot[])
     for(i=0;i<strlen(mot);i++)
     {
        a = a + (int)mot[i];
+
        b=b+a;
     }
     printf("0%x",b);
@@ -217,7 +218,7 @@ int main()
     {
         printf("Entrer votre cle : ");
         scanf("%s",&Key);
-        hashAdler32(Key);
+        hashAdler32(Key,Text);
     }
     if(Choice[0]=='C' || Choice[0] == 'c')
     {
