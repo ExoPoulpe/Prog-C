@@ -13,6 +13,7 @@
 #include <stdio.h>
 #include <string.h>
 
+#define VERSION_SOFT 1.7.0.0
 #define MAX_SIZE_TEXT 2048
 #define MAX_LETTRE_NUMBER 26
 #define MAX_PASSWORD_LENGTH 128
