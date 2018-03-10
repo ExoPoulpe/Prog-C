@@ -1,13 +1,13 @@
 /*
 *
 *Author:    Troller Fabian
-*Grade:     Tecnician ES in Computer Scientist
-*Version:   1.5.2.0
+*Grade:     Tecnician ES in ComputerScientist
+*Version:   1.7.0.0  // 1.7.0.0 IS STABLE
 *Date:      01.28.2018
 *Description:   Encode and Decode by Vigenere methods with password and encode by cezar with select value
 *Use: For use that you must just type c/C or cr/CR or cra/CRA for encode your word value with your password
 *Show help for more Informations
-* RSA encode on DEV
+*
 */
 
 #include <stdio.h>
@@ -56,7 +56,7 @@ signed int carOverFlowList(signed int Value) // methods for secure value in alap
     return Value;
 }
 
-char hashAdler32(char mot[],char Hash[])
+char hashAdler32(char mot[])
 {
     unsigned int a=1,b=0,i=0;
     char resultA[16],resultB[16];
@@ -64,7 +64,6 @@ char hashAdler32(char mot[],char Hash[])
     for(i=0;i<strlen(mot);i++)
     {
        a = a + (int)mot[i];
-
        b=b+a;
     }
     printf("0%x",b);
@@ -194,7 +193,10 @@ void stringTableClear(char texte[])
     unsigned int i =0;
     for(i=0;i<strlen(texte);i++)
     {
-        texte[i] = '\000';
+        //texte[i] = NULL;
+        //texte[i] = '\0';
+        memset(texte,0,255);
+
     }
 }
 
@@ -218,7 +220,7 @@ int main()
     {
         printf("Entrer votre cle : ");
         scanf("%s",&Key);
-        hashAdler32(Key,Text);
+        hashAdler32(Key);
     }
     if(Choice[0]=='C' || Choice[0] == 'c')
     {
@@ -246,6 +248,8 @@ int main()
     puts("\n=========Chiffrer===============\n");
     printf("%s\n",result);
     puts("\n================================\n");
+    stringTableClear(Text);
+    stringTableClear(Key);
     }
     else if(Choice[0]=='D' || Choice[0] == 'd')
     {
@@ -275,6 +279,7 @@ int main()
     else if((Choice[0] == 'h' || Choice[0] == 'H') && (Choice[1]=='\n' || Choice[1] == '\n'))
     {
         puts("\nBienvenu dans se systeme de chiffrement basique\n");
+        puts("\nVersion : 1.7.0.0 Is Stable\n");
         puts("\n================================================================\n");
         puts("\nMETHODS\n");
         puts("\n================================================================\n");
