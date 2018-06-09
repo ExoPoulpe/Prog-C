@@ -24,6 +24,16 @@ signed int valueChiffrer=0,valueDechiffrer=0,valueRot=0;
 char Choice[10];
 char result[MAX_SIZE_TEXT];
 
+
+/** \brief
+ * Find character on list
+ * \param char alphabet[]
+ * \param char character
+ * \return unsigned int
+ *
+ */
+/**< Found char */
+///Found character on list.
 unsigned int carFindInList(char alphabet[],char caractere) // methods for finding character in table of character
 {
 
@@ -40,7 +50,14 @@ unsigned int carFindInList(char alphabet[],char caractere) // methods for findin
     }
 }
 
+/** \brief
+ * Insert character in alphabet
+ * \param signed int Value
+ * \return signed int
+ *
+ */
 
+///Check value for character on alphabet.
 signed int carOverFlowList(signed int Value) // methods for secure value in alaphabet
 {
     if(Value>MAX_LETTRE_NUMBER)
@@ -57,6 +74,14 @@ signed int carOverFlowList(signed int Value) // methods for secure value in alap
     return Value;
 }
 
+/** \brief
+ * Make Hash with Adler32 methods
+ * \param char Word[]
+ * \return char
+ *
+ */
+
+///Make hash Adler32 with word.
 char hashAdler32(char mot[])
 {
     unsigned int a=1,b=0,i=0;
@@ -71,8 +96,16 @@ char hashAdler32(char mot[])
     printf("0%x",a);
 }
 
+/** \brief
+ *  Make Rotation on alphabet
+ * \param unsigned int Number
+ * \param char Choice[]
+ * \param  signed int NumberRotate
+ * \return unsigned int
+ *
+ */
 
-
+///Make rotation alphabet.
 unsigned int chiffreRot(unsigned int Number, char choice[],signed int NumberRotate) // method for substituate character on alaphabet
 {
     signed int rot=13;
@@ -92,6 +125,18 @@ unsigned int chiffreRot(unsigned int Number, char choice[],signed int NumberRota
 }
 
 
+/** \brief
+ *  Make chiffrement Vigenere
+ * \param char Text[]
+ * \param char Key[]
+ * \param char StringResult[]
+ * \param char Choice[]
+ * \param signed int NumberRotate
+ * \return char
+ *
+ */
+
+///Make chiffrement Vigenere with Text , Key , Choice , RotateNumber.
 char chiffreVigenere(char texte[],char key[],char stringResult[MAX_SIZE_TEXT],char choice[],signed int NumberRotate) // methods for chiffre word with vigenere
 {
     unsigned int i=0,valueKey=0,valueText=0,valueResult=0;
@@ -189,6 +234,12 @@ char chiffreVigenere(char texte[],char key[],char stringResult[MAX_SIZE_TEXT],ch
 
 }
 
+/** \brief
+ * Clear table
+ * \param char Table[]
+ * \return void
+ *
+ */
 void stringTableClear(char texte[])
 {
     unsigned int i =0;

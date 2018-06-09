@@ -1,0 +1,32 @@
+F:/Github/Prog-C/testVigenereRotSelect/main.c:36: warning: argument 'char' of command @param is not found in the argument list of carFindInList(char alphabet[], char caractere)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:36: warning: argument 'char' of command @param is not found in the argument list of carFindInList(char alphabet[], char caractere)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:37: warning: The following parameters of carFindInList(char alphabet[], char caractere) are not documented:
+  parameter 'alphabet'
+  parameter 'caractere'
+F:/Github/Prog-C/testVigenereRotSelect/main.c:60: warning: argument 'signed' of command @param is not found in the argument list of carOverFlowList(signed int Value)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:61: warning: The following parameters of carOverFlowList(signed int Value) are not documented:
+  parameter 'Value'
+F:/Github/Prog-C/testVigenereRotSelect/main.c:108: warning: argument 'unsigned' of command @param is not found in the argument list of chiffreRot(unsigned int Number, char choice[], signed int NumberRotate)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:108: warning: argument 'char' of command @param is not found in the argument list of chiffreRot(unsigned int Number, char choice[], signed int NumberRotate)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:108: warning: argument 'signed' of command @param is not found in the argument list of chiffreRot(unsigned int Number, char choice[], signed int NumberRotate)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:109: warning: The following parameters of chiffreRot(unsigned int Number, char choice[], signed int NumberRotate) are not documented:
+  parameter 'Number'
+  parameter 'choice'
+  parameter 'NumberRotate'
+F:/Github/Prog-C/testVigenereRotSelect/main.c:139: warning: argument 'char' of command @param is not found in the argument list of chiffreVigenere(char texte[], char key[], char stringResult[MAX_SIZE_TEXT], char choice[], signed int NumberRotate)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:139: warning: argument 'char' of command @param is not found in the argument list of chiffreVigenere(char texte[], char key[], char stringResult[MAX_SIZE_TEXT], char choice[], signed int NumberRotate)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:139: warning: argument 'char' of command @param is not found in the argument list of chiffreVigenere(char texte[], char key[], char stringResult[MAX_SIZE_TEXT], char choice[], signed int NumberRotate)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:139: warning: argument 'char' of command @param is not found in the argument list of chiffreVigenere(char texte[], char key[], char stringResult[MAX_SIZE_TEXT], char choice[], signed int NumberRotate)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:139: warning: argument 'signed' of command @param is not found in the argument list of chiffreVigenere(char texte[], char key[], char stringResult[MAX_SIZE_TEXT], char choice[], signed int NumberRotate)
+F:/Github/Prog-C/testVigenereRotSelect/main.c:140: warning: The following parameters of chiffreVigenere(char texte[], char key[], char stringResult[MAX_SIZE_TEXT], char choice[], signed int NumberRotate) are not documented:
+  parameter 'texte'
+  parameter 'key'
+  parameter 'stringResult'
+  parameter 'choice'
+  parameter 'NumberRotate'
+F:/Github/Prog-C/testVigenereRotSelect/main.c:84: warning: argument 'char' of command @param is not found in the argument list of hashAdler32(char mot[])
+F:/Github/Prog-C/testVigenereRotSelect/main.c:85: warning: The following parameters of hashAdler32(char mot[]) are not documented:
+  parameter 'mot'
+F:/Github/Prog-C/testVigenereRotSelect/main.c:237: warning: argument 'char' of command @param is not found in the argument list of stringTableClear(char texte[])
+F:/Github/Prog-C/testVigenereRotSelect/main.c:243: warning: The following parameters of stringTableClear(char texte[]) are not documented:
+  parameter 'texte'
